@@ -25,8 +25,8 @@ class Server(threading.Thread):
             client_socket, client_address = self.server_socket.accept()
             print(f"{client_socket} {client_address}")
             print(f"Accepted connection from {client_address}")
-            client_handler = ClientHandler(client_socket)
-            client_handler.start()
+            # client_handler = ClientHandler(client_socket)
+            # client_handler.start()
 
     def send_data(self, data):
         self.data = data
